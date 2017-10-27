@@ -12,3 +12,19 @@ txt = open(filename)
 print(f"Here's your file {filename}:")
 # Print the contents of the provided file
 print(txt.read())
+
+# Close the file
+txt.close()
+
+# Print "Type the filename again:"
+print("Type the filename again:")
+# Prompt for user input and assign to variable
+file_again = input("> ")
+
+# Open the file and assign to txt_again variable
+txt_again = open(file_again)
+# Print the contents of the provided file
+print(txt_again.read())
+
+# Close the file
+txt_again.close()
